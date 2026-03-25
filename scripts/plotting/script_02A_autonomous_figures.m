@@ -303,6 +303,13 @@ end
 xlabel('Horizontal COM Pos (m)');
 ylabel('Vertical COM Pos (m)');
 
+figure(71);clf;
+%plot(all_samp_COM(1,:),all_samp_COM(2,:),'k.');
+random_plot_clusters(clust,COM_remap,200);
+axis equal;
+xlabel('Horizontal COM Pos (m)');
+ylabel('Vertical COM Pos (m)');
+
 %% Generate POI Diagrams
 clear plot_param
 plot_param.l1 = human_param.L1;
